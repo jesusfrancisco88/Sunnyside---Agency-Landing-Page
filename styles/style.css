@@ -97,7 +97,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 5rem;
+  font-size: 4.8rem;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 10px;
@@ -146,23 +146,23 @@ body {
 }
 
 .text-container {
-  width: 70%;
+  width: 65%;
 }
 
 .heading-secondary {
   font-family: 'Fraunces';
   color: hsl(212, 27%, 19%);
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 3rem;
 }
 
 .text-description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   color: hsl(213, 9%, 39%);
   font-family: 'Barlow';
   line-height: 1.5;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .learn-more {
@@ -172,35 +172,35 @@ body {
   font-family: 'Fraunces';
   color:hsl(212, 27%, 19%);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
 
   transition: all 0.4s;
 }
 
 .learn-more.lm-1:link, 
 .learn-more.lm-1:visited {
-  border-bottom: 10px solid hsl(51, 100%, 49%);
+  border-bottom: 5px solid hsl(51, 100%, 49%);
 }
 
 .learn-more.lm-1:hover, 
 .learn-more.lm-1:active {
-  border-bottom: 10px solid hsl(7, 99%, 70%);
+  border-bottom: 5px solid hsl(7, 99%, 70%);
 
 }
 
 .learn-more.lm-2:link, 
 .learn-more.lm-2:visited {
-  border-bottom: 10px solid hsl(7, 99%, 70%);
+  border-bottom: 5px solid hsl(7, 99%, 70%);
 }
 
 .learn-more.lm-2:hover, 
 .learn-more.lm-2:active {
-  border-bottom: 10px solid hsl(51, 100%, 49%);
+  border-bottom: 5px solid hsl(51, 100%, 49%);
 }
 
 .text-cont {
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 60%;
@@ -217,16 +217,16 @@ body {
 }
 
 .heading-terciary {
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   margin-bottom: 2rem;
   font-family: 'Fraunces';
   color:  hsl(167, 40%, 24%);
 }
 
 .paragraph-terciary {
-  font-size: 1.7rem;
+  font-size: 1.65rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.45;
   color:  hsl(167, 40%, 24%);
 }
 
@@ -248,8 +248,12 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--1-cols {
+  grid-template-columns: 1fr;
+}
+
 .grid-cust {
-  column-gap: 4rem;
+  column-gap: 3.5rem;
 }
 
 .content-testimonial {
@@ -294,7 +298,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #333333c1;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -314,7 +318,7 @@ body {
 .containeer {
   display: flex;
   margin: 0 auto;
-  width: 65%;
+  width: 75%;
 }
 
 /***********************/
@@ -328,6 +332,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/**************/
 .gallery-item {
   position: relative;
   width: 100%;
@@ -340,6 +345,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+/**************/
 
 /***********************/
 /**** FOOTER ***********/
@@ -388,3 +394,106 @@ body {
   display: flex;
   gap: 3rem;
 }
+
+/*******************************/
+/**** NAVIGATION RESPONSIVE ****/
+/*******************************/
+.overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 10;
+  display: none;
+
+  transform: translateX(-100vw);
+  /* transition: all 0.4s; */
+ }
+
+ .overlay-slice-right {
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+ }
+
+ .overlay-slice-left {
+  transform: translateX(-100vw);
+  transition: all 0.4s ease-in-out;
+ }
+ /*/////////////////////////////////////*/
+ .main-nav-res,
+ .main-nav-res .main-nav-list-res {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  list-style: none;
+ }
+
+ .main-nav-list-res li {
+  height: 25%;
+ }
+
+ .main-nav-list-res li a {
+  position: relative;
+  top: 45%;
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+ }
+
+ .main-nav-link-res {
+  font-size: 2.2rem;
+ }
+
+ .btn-contact-res {
+  font-size: 2.2rem;
+ }
+
+ #nav-1 {background-color:  hsl(7, 99%, 70%);}
+ #nav-2 {background-color:hsla(0, 0%, 100%, 0.942);}
+ #nav-3 {background-color: hsl(7, 99%, 70%);}
+ #nav-4 {background-color: hsla(0, 0%, 100%, 0.9);}
+
+/********************/
+/**** MENU BARS ****/
+/*******************/
+.menu-bars {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  z-index: 10;
+  display: inline;
+  cursor: pointer;
+  
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
