@@ -120,21 +120,68 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Queries  */
+.grid--1-cols {
+  display: none;
+  grid-template-columns: 1fr;
+}
+
+.grid--2-cols-mobile {
+  grid-template-columns: repeat(2, 1fr);
+  display: none;
+}
+/* // */
+
 .container {
   width: 100%;
   margin: 0 auto;
   max-width: auto;
 }
 
-.img-box {
-  max-width: 100%;
-  height: auto;
+.testimonial-box {
+  margin-bottom: 3.5rem;
 }
 
-.img-content {
-  width: 100%;
-  height: 100%;
+.img-box-1 {
+  width:100%;
+  height:auto; /* El elemento se ajustara automaticaamente a la altura.*/
+  padding-bottom: 75%; /* Cambia el valor según la relación de aspecto. */
+
+  background: url(/images/desktop/image-transform.jpg) center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
+
+.img-box-2 {
+  width:100%;
+  height:auto;
+  padding-bottom: 75%; 
+
+  background:  url(/images/desktop/image-stand-out.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.img-box-3 {
+  width:100%;
+  height:auto;
+  padding-bottom: 75%; 
+
+  background:  url(/images/desktop/image-graphic-design.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.img-box-4 {
+  width:100%;
+  height:auto;
+  padding-bottom: 75%; 
+
+  background:  url(/images/desktop/image-photography.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
 
 .content-description {
   display: flex;
@@ -172,35 +219,35 @@ body {
   font-family: 'Fraunces';
   color:hsl(212, 27%, 19%);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
 
   transition: all 0.4s;
 }
 
 .learn-more.lm-1:link, 
 .learn-more.lm-1:visited {
-  border-bottom: 5px solid hsl(51, 100%, 49%);
+  border-bottom: 3px solid hsl(51, 100%, 49%);
 }
 
 .learn-more.lm-1:hover, 
 .learn-more.lm-1:active {
-  border-bottom: 5px solid hsl(7, 99%, 70%);
+  border-bottom: 3px solid hsl(7, 99%, 70%);
 
 }
 
 .learn-more.lm-2:link, 
 .learn-more.lm-2:visited {
-  border-bottom: 5px solid hsl(7, 99%, 70%);
+  border-bottom: 3px solid hsl(7, 99%, 70%);
 }
 
 .learn-more.lm-2:hover, 
 .learn-more.lm-2:active {
-  border-bottom: 5px solid hsl(51, 100%, 49%);
+  border-bottom: 3px solid hsl(51, 100%, 49%);
 }
 
 .text-cont {
   position: absolute;
-  top: 75%;
+  top: 76%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 60%;
@@ -218,7 +265,7 @@ body {
 
 .heading-terciary {
   font-size: 3.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-family: 'Fraunces';
   color:  hsl(167, 40%, 24%);
 }
@@ -246,10 +293,6 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--1-cols {
-  grid-template-columns: 1fr;
 }
 
 .grid-cust {
@@ -329,7 +372,47 @@ body {
 }
 
 .grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
+/* display: block; */
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery-item-1 {
+  width:100%;
+  height:auto;
+  padding-bottom: 75%; 
+
+  background:  url(/images/desktop/image-gallery-milkbottles.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.gallery-item-2 {
+  width:100%;
+  height:auto;
+  padding-bottom: 75%; 
+
+  background:  url(/images/desktop/image-gallery-orange.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.gallery-item-3 {
+  width:100%;
+  height:auto;
+  /* padding-bottom: 75%;  */
+
+  background:  url(/images/desktop/image-gallery-cone.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.gallery-item-4 {
+  width:100%;
+  height:auto;
+  padding-bottom: 75%; 
+
+  background:  url(/images/desktop/image-gallery-sugarcubes.jpg)  center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 /**************/
@@ -467,7 +550,7 @@ body {
 /*******************/
 .menu-bars {
   position: fixed;
-  top: 2rem;
+  top: 3rem;
   right: 3rem;
   z-index: 10;
   display: inline;
