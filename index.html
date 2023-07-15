@@ -14,6 +14,10 @@
    <!-- /// -->
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/queries.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--  -->
   <title>Sunnyside agency</title>
 </head>
 <body>
@@ -55,7 +59,7 @@
     <section class="hero-section">
       <div class="hero">
         <div class="hero-text-box">
-        <h1 class="heading-primary">We are creatives</h1>
+        <h1 class="heading-primary" data-aos="fade-down" data-aos-duration="1500">We are creatives</h1>
          <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-icon">
       </div>
     </div>
@@ -69,7 +73,7 @@
 
         <!-- 2 Columns -->
         <div class="content-description content-desc-mobile grid-item">
-          <div class="text-container">
+          <div class="text-container" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h2 class="heading-secondary">Transform your brand</h2>
           <p class="text-description">We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -80,7 +84,7 @@
         <!-- 2 Columns -->
         <div class="img-box-2 grid-item"><!-- <img class='img-content' src="images/desktop/image-stand-out.jpg" alt="image of egg"> --></div>
         <div class="content-description grid-item">
-          <div class="text-container">
+          <div class="text-container" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h2 class="heading-secondary">Stand out to the right audience</h2>
           <p class="text-description"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we will build and extend your brand in digital places.</p>
           <a href="#" class="learn-more lm-2">Learn more</a>
@@ -113,21 +117,21 @@
         <h2 class="title-testimonial">Client testimonials</h2>
         <div class="containeer grid grid-cust grid--3-cols grid--1-cols">
           <!-- Testimonial 1 -->
-          <figure class="testimonial-box">
+          <figure class="testimonial-box" data-aos="zoom-in-down" data-aos-delay="600">
             <img src="images/image-emily.jpg" alt="Photo of Emily R. - Marketing Director" class="img-testimonial">
             <blackquote class="testimonial-text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</blackquote>
             <p class="testimonial-name">Emily R.</p>
             <p class="testimonial-position">Marketing Director</p>
           </figure>
           <!-- Testimonial 2 -->
-          <figure class="testimonial-box">
+          <figure class="testimonial-box" data-aos="zoom-in-down" data-aos-delay="600">
             <img src="images/image-thomas.jpg" alt="Photo of Thomas S. - Chief Operating Officer" class="img-testimonial">
             <blackquote class="testimonial-text"> Sunnyside&apos;s enthusiasm coupled with their keen interest in our brand&apos;s success made it a satisfying and enjoyable experience.</blackquote>
             <p class="testimonial-name">Thomas S.</p>
             <p class="testimonial-position">Chief Operating Officer</p>
           </figure>
           <!-- Testimonial 3 -->
-          <figure class="testimonial-box">
+          <figure class="testimonial-box" data-aos="zoom-in-down" data-aos-delay="600">
             <img src="images/image-jennie.jpg" alt="Photo of Jennie F. - Business Owner" class="img-testimonial">
             <blackquote class="testimonial-text">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blackquote>
             <p class="testimonial-name">Jennie F.</p>
@@ -177,4 +181,10 @@
   <!--*/ FOOTER  //  -->
 </body>
 <script src="script.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  </script>
+<!--  -->
 </html>

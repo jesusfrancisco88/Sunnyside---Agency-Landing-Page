@@ -168,8 +168,8 @@ nav {
 @media(max-width:31em) {
 
   html {
-    /* 9px / 16px = 56.25% */
-    font-size: 56.25%;
+    /* 10px / 16px = 56.25% */
+    font-size: 60%;
   }
 
 
